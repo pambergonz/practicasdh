@@ -116,6 +116,7 @@ switch ($nota) {
     break;
 }
 
+echo "2";
 
 
 
