@@ -7,4 +7,6 @@ echo "hola " . $_SESSION['name'] . "!!!!!!";
 
 
 
+
+
 ?>
