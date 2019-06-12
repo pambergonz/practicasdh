@@ -1,7 +1,5 @@
 <?php
 
-
-
 function loginValidate(){
 $errores = [];
 
@@ -11,30 +9,20 @@ $password = trim($_POST['password']);
 if (empty($password)) {
   $errores['inPassword']="Completá tu contraseña";
 }
-elseif (passwordMatch($password)) {
-  $errores['inPassword'] = "credenciales incorrectas";
-}
-elseif(emailExist($email) == false && passwordMatch($password) == true){
-  $errores['inEmail']="Credenciales incorrectas, registrate acá";
-}
 
 if (empty($email)) {
   $errores['inEmail']="Completá tu email";
 }
-elseif(emailExist($email) == false && passwordMatch($password) == true){
-  $errores['inEmail']=" ";
-}
-elseif(emailExist($email) == false){
-  $errores['inEmail']="Credenciales incorrectas";
+
+elseif(emailExist($email) == false || passwordMatch($password) == true){
+  $errores['inPassword']="Credenciales incorrectas, registrate acá";
 }
 
 return $errores;
 }
 
 function registerValidate(){
-  //creo un array de errores
   $errors = [];
-  //guardo lo que vino por post en la posicion name
   $fullName = trim($_POST['name']);
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
