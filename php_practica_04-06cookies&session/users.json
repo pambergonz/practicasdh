@@ -70,5 +70,17 @@
         "email": " jhsraajh@hotmail.com",
         "nacionalidad": "ar",
         "password": "$2y$10$RibLSxUQCpNCT1Rhh3sQSuHw6tWuAivTrM3dgb5WG9O81XtUxLhsW"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA111@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$f6F.SUO6Gv8UQ75wzvBOFOQUhYWDOUOl3GDqZLF61jdQM5WkqV7h6"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA111@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$JD7h5SmCX64tJBeTe4HSveMiMQ.FhMCfEu4yMMvGGr0gCNjeR1etO"
     }
 ]

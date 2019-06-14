@@ -90,10 +90,8 @@ function emailExist($email){
     if ($oneUser["email"] == $email){
       return true;
     }
-else {
-  return false;
   }
- }
+     return false;
 }
 
 function passwordMatch($password){
