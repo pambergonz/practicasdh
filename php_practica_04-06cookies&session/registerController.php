@@ -1,36 +1,42 @@
 <?php
 
-function loginValidate(){
-$errores = [];
+function loginValidate() {
+  $errores = [];
+  $email = trim($_POST['email']);
+  $password = trim($_POST['password']);
 
-$email = trim($_POST['email']);
-$password = trim($_POST['password']);
+  if (empty($password)) {
+    $errores['inPassword']="Completá tu contraseña";
+  }
+  elseif (passwordMatch($password)) {
+    $errores['inPassword'] = "credenciales incorrectas";
+  }
+  elseif(emailExist($email) == false && passwordMatch($password) == true){
+    $errores['inEmail']="Credenciales incorrectas, registrate acá";
+  }
 
-if (empty($password)) {
-  $errores['inPassword']="Completá tu contraseña";
+  if (empty($email)) {
+    $errores['inEmail']="Completá tu email";
+  }
+  elseif(emailExist($email) == false && passwordMatch($password) == true){
+    $errores['inEmail']=" ";
+  }
+  elseif(emailExist($email) == false){
+    $errores['inEmail']="Credenciales incorrectas";
+  }
+
+  return $errores;
 }
 
-if (empty($email)) {
-  $errores['inEmail']="Completá tu email";
-}
-
-elseif(emailExist($email) == false || passwordMatch($password) == true){
-  $errores['inPassword']="Credenciales incorrectas, registrate acá";
-}
-
-return $errores;
-}
-
-function registerValidate(){
+function registerValidate() {
   $errors = [];
   $fullName = trim($_POST['name']);
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
   $repassword = trim($_POST['repassword']);
   $country= $_POST['nacionalidad'];
-  //pregunto si full name está vacio
+
   if (empty($fullName)) {
-  //seteo en el array de errores la posicion inFullName.
     $errors['inFullName']="Completá tu nombre";
   }
   if (empty($email)) {
@@ -60,15 +66,16 @@ function registerValidate(){
   return $errors;
 }
 
-function saveUsers(){
-  $users = file_get_contents("users.json");
-  $usersInArray = json_decode($users, true);
-  $_POST['password'] = password_hash($_POST['password'],PASSWORD_DEFAULT);
+function saveUsers() {
 
-  $_POST["id"] = count($usersInArray) + 1;
-  $usersInArray[] = $_POST;
+  $allusersInArray = allUsers();
 
-  $jsonNewUser= json_encode($usersInArray);
+  unset($_POST["repassword"]);
+  $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  $allusersInArray[] = $_POST;
+
+  $jsonNewUser= json_encode($allusersInArray, JSON_PRETTY_PRINT);
+
   FILE_PUT_CONTENTS("users.json", $jsonNewUser);
 }
 
@@ -86,7 +93,7 @@ function emailExist($email){
 else {
   return false;
   }
-}
+ }
 }
 
 function passwordMatch($password){
