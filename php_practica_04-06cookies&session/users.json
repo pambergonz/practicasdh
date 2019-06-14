@@ -10,5 +10,65 @@
         "email": " kari@hotmail.com",
         "nacionalidad": "ar",
         "password": "$2y$10$wIdPE8tMBM6sG4x36D.GReVAP.jckpE443F\/uDJJM0tpOEhGbtDh2"
+    },
+    {
+        "name": "maria",
+        "email": "MAI@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$cU3W7GVup\/A77f\/YM5Vs7eYzyIdtLAO01D2JmfbbJO\/eJqUsNcmYy"
+    },
+    {
+        "name": "MAI",
+        "email": "MAIu@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$0t3Iq\/PbeBfcXZsMe8VozuqK163SPo7Mh13dbNkfc.BvvQHfUdUV2"
+    },
+    {
+        "name": "gabi",
+        "email": "gabi@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$9yALbMLODwnv7NRVY4SAl.vsg8sz8OaBmELqAZiomiQbM4tytExRq"
+    },
+    {
+        "name": "Nicolas",
+        "email": " jhsrjh@hotmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$OqLYpwlT4WKCGJ6IsYfcmuRHSRgUveI9HR0ZlAbA40fDdO5kuztWK"
+    },
+    {
+        "name": "gabi",
+        "email": "gabi@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$SxwNeMP.S5G2.zqtLX8pduWoWE.A.wQ8thLk.\/y21PoDDNvd3kgZO"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$Uz.9NMS4EZra1qhpSSC\/Ku4B6A7\/0GBdXN3QeQ5AltiKyR5.\/Lnte"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA1@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$q6L1G3Efi20ayyzuAvWqcurTBdBOSTHEC1KrGfYE9tT\/EYjDYVrlK"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA111@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$1N6mLk8CJTFK07boumhT\/ewIzbEHvjbqNApTQnL9HLMEGtwx7.tC2"
+    },
+    {
+        "name": "gabi",
+        "email": "gabiA111@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$r7x59Rt3Ca0bz2CUehW2Euitx0nAL1bMeW7cEi7ZxgjxQdnz7Ajj."
+    },
+    {
+        "name": "Nicolas",
+        "email": " jhsraajh@hotmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$RibLSxUQCpNCT1Rhh3sQSuHw6tWuAivTrM3dgb5WG9O81XtUxLhsW"
     }
 ]

@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Register";
 require_once("partials/head.php");
 require_once("registerController.php");
@@ -21,9 +22,13 @@ if ($_POST) {
   $errorsInRegister = registerValidate();
   if (!$errorsInRegister){
     saveUsers();
+    $_SESSION = $_POST;
 
     //echo "<pre>";
     //var_dump($_POST);
+    //echo "<pre>";
+    //echo "<pre>";
+    //var_dump($_SESSION);
     //echo "<pre>";exit;
 
     header("location:perfil.php");
