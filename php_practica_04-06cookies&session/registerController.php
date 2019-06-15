@@ -70,8 +70,10 @@ function saveUsers() {
 
   $allusersInArray = allUsers();
 
+  $_POST["id"]= addUserId();
   unset($_POST["repassword"]);
   $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  //hay que trimmear cada campo antes de guardarlo en array. si no error ej caracteres en blanco no funcionaba emailexist()
   $allusersInArray[] = $_POST;
 
   $jsonNewUser= json_encode($allusersInArray, JSON_PRETTY_PRINT);
@@ -94,6 +96,31 @@ function emailExist($email){
      return false;
 }
 
+function addUserId(){
+  $allUsers = allUsers();
+  $lastUser = array_pop($allUsers);
+  if (!$allUsers) {
+  return $lastUser["id"] = 1;
+  }
+  else {
+  return $lastUser["id"] + 1;
+  }
+}
+
+function getAUserByEmail($email){
+  $allUsers = allUsers();
+  foreach ($allUsers as $oneUser) {
+    if ($oneUser["email"] == $email){
+      return $oneUser;
+    }
+  }
+     return NULL;
+}
+
+
+
+
+
 function passwordMatch($password){
 $allUsers = allUsers();
 foreach ($allUsers as $oneUser) {
@@ -106,7 +133,7 @@ foreach ($allUsers as $oneUser) {
  }
 }
 
-// function passEmailMatch. nueva funcion un SOLO foreach, se pregunta si las dos condiciones matechean &&, SI LAS DOS matechean, se return un usuario.
+//cambiar las variables por parametros
 function passEmailMatch($email,$password){
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
@@ -117,6 +144,7 @@ function passEmailMatch($email,$password){
     }
   }
 }
+
 
 
 

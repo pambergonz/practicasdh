@@ -82,5 +82,37 @@
         "email": "gabiA111@hotmail.com",
         "nacionalidad": "br",
         "password": "$2y$10$JD7h5SmCX64tJBeTe4HSveMiMQ.FhMCfEu4yMMvGGr0gCNjeR1etO"
+    },
+    {
+        "name": "Nicolas",
+        "email": "   apa@hotmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$yZEMJaCCcz\/f9SX27\/VrCef0gFBmTPzlIFmRBjMfJKBpi8m8VcPOC"
+    },
+    {
+        "name": "Nico",
+        "email": "   apLa@hotmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$ke6eDcQvWmmnErGbCUC2DOnXj28\/BqlqLnKbrVG5CB5s.0zzCNX.2"
+    },
+    {
+        "name": "maria",
+        "email": "ma@hotmail.com",
+        "nacionalidad": "br",
+        "password": "$2y$10$haddRMVbpqWPROKvq4ZnCOKcKLjCvb9reBTtWATWL2WC83Byqxi9u"
+    },
+    {
+        "name": "Nicolas",
+        "email": "perfu.s222ping@gmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$0zVIR01RuSkqw4\/3fDFeIuscClKc9KH15UUPQzBjWI\/11Iw4UKL8e",
+        "id": 1
+    },
+    {
+        "name": "Niolas",
+        "email": "perfu.2ping@gmail.com",
+        "nacionalidad": "ar",
+        "password": "$2y$10$lR0zp1.ZIcyLwtH8Em1pGu6IThh5mVclL.OW1g9NuEmHJ2Yvtr2W2",
+        "id": 2
     }
 ]

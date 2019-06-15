@@ -3,10 +3,14 @@ require_once("registerController.php");
 require_once("partials/head.php");
 
 if ($_POST) {
+
+
+
   $errorsInRegister = loginValidate();
 
   $password= password_hash($_POST['email'],PASSWORD_DEFAULT);
-  $email= $_POST['email'];
+  $email= trim($_POST['email']);
+
 
 
   if (!$errorsInRegister){
