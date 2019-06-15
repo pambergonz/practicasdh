@@ -22,7 +22,7 @@ if ($_POST) {
   $errorsInRegister = registerValidate();
   if (!$errorsInRegister){
     saveUsers();
-    $_SESSION = $_POST;
+    $_SESSION = userDetails();
 
     //echo "<pre>";
     //var_dump($_POST);

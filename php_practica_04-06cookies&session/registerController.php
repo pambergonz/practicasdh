@@ -8,23 +8,12 @@ function loginValidate() {
   if (empty($password)) {
     $errores['inPassword']="Completá tu contraseña";
   }
-  elseif (passwordMatch($password)) {
-    $errores['inPassword'] = "credenciales incorrectas";
-  }
-  elseif(emailExist($email) == false && passwordMatch($password) == true){
-    $errores['inEmail']="Credenciales incorrectas, registrate acá";
-  }
-
   if (empty($email)) {
     $errores['inEmail']="Completá tu email";
   }
-  elseif(emailExist($email) == false && passwordMatch($password) == true){
-    $errores['inEmail']=" ";
+  elseif (!empty($email) && emailExist($email) == false || !empty($password) && passwordMatch($password) == true){
+    $errores['inEmail']="Credenciales incorrectas, registrate acá";
   }
-  elseif(emailExist($email) == false){
-    $errores['inEmail']="Credenciales incorrectas";
-  }
-
   return $errores;
 }
 
@@ -104,7 +93,6 @@ function userDetails() {
   "password" => password_hash($_POST["password"], PASSWORD_DEFAULT),
   ];
 
-
   return $usuario;
 }
 
@@ -119,6 +107,7 @@ function addUserId(){
   }
 }
 
+//se puede reemplazar esta funcion por emailExist para validar login y register
 function getAUserByEmail($email){
   $allUsers = allUsers();
   foreach ($allUsers as $oneUser) {

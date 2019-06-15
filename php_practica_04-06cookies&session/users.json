@@ -10,5 +10,35 @@
         "email": "marta@HOTMAIL.COM",
         "id": 1,
         "password": "$2y$10$YUcbi\/S0y2.oLzJehmsGJ.ihRtsm7ENmdACc2GEpDRm\/dS9XObK5S"
+    },
+    {
+        "name": "Nicolas",
+        "email": "perfu.sfffhopping@gmail.com",
+        "id": 2,
+        "password": "$2y$10$3rKTZ\/JccbJKTZNofn9DNeRTdTDC1XwJ24ZRnCRFp\/ah\/td9P1lqS"
+    },
+    {
+        "name": "Nicolas",
+        "email": "perfu.shopping@gmail.com",
+        "id": 3,
+        "password": "$2y$10$oB4K8llurYROcWVMpfC5qeMRjyP2Z29YgcxyzK\/XmZ0fPNwNk067O"
+    },
+    {
+        "name": "Nicolas",
+        "email": "perfu.showrwrpping@gmail.com",
+        "id": 4,
+        "password": "$2y$10$R2cvCx49nvH.ig71K\/UEl.E5UCQ2Sit9zXsAeb4Y7EoBTujibniRa"
+    },
+    {
+        "name": "Nicolas",
+        "email": "perfu.sWRWRhowrwrpping@gmail.com",
+        "id": 5,
+        "password": "$2y$10$4ijck28o5GHGcuRs\/CAQg.XQKj8I5kn.wc5yT5GNQnk3SYZsuafC2"
+    },
+    {
+        "name": "Nicolas",
+        "email": "jhjhaaaaa@hotmail.com",
+        "id": 6,
+        "password": "$2y$10$p0Yi\/oEUYsRbXowBIe6HMOke92VKn8HeJxGglyMu1DkOYr0dTUwSu"
     }
 ]
