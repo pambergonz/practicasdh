@@ -1,118 +1,14 @@
 [
     {
-        "name": "cari",
-        "email": " cari@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$Lchgv8EPU22emYTrzGAHbu8H6qtluV55U66CTKUueTBIr4WNfWMou"
+        "name": "camilo",
+        "email": "CA@HOTMAIL.COM",
+        "id": 1,
+        "password": "$2y$10$RwG06KwLwh3pOtef9cO8\/uLF\/mhuBavWiGJBSop.MoinW.qi8cv22"
     },
     {
-        "name": "kari",
-        "email": " kari@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$wIdPE8tMBM6sG4x36D.GReVAP.jckpE443F\/uDJJM0tpOEhGbtDh2"
-    },
-    {
-        "name": "maria",
-        "email": "MAI@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$cU3W7GVup\/A77f\/YM5Vs7eYzyIdtLAO01D2JmfbbJO\/eJqUsNcmYy"
-    },
-    {
-        "name": "MAI",
-        "email": "MAIu@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$0t3Iq\/PbeBfcXZsMe8VozuqK163SPo7Mh13dbNkfc.BvvQHfUdUV2"
-    },
-    {
-        "name": "gabi",
-        "email": "gabi@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$9yALbMLODwnv7NRVY4SAl.vsg8sz8OaBmELqAZiomiQbM4tytExRq"
-    },
-    {
-        "name": "Nicolas",
-        "email": " jhsrjh@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$OqLYpwlT4WKCGJ6IsYfcmuRHSRgUveI9HR0ZlAbA40fDdO5kuztWK"
-    },
-    {
-        "name": "gabi",
-        "email": "gabi@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$SxwNeMP.S5G2.zqtLX8pduWoWE.A.wQ8thLk.\/y21PoDDNvd3kgZO"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$Uz.9NMS4EZra1qhpSSC\/Ku4B6A7\/0GBdXN3QeQ5AltiKyR5.\/Lnte"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA1@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$q6L1G3Efi20ayyzuAvWqcurTBdBOSTHEC1KrGfYE9tT\/EYjDYVrlK"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA111@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$1N6mLk8CJTFK07boumhT\/ewIzbEHvjbqNApTQnL9HLMEGtwx7.tC2"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA111@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$r7x59Rt3Ca0bz2CUehW2Euitx0nAL1bMeW7cEi7ZxgjxQdnz7Ajj."
-    },
-    {
-        "name": "Nicolas",
-        "email": " jhsraajh@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$RibLSxUQCpNCT1Rhh3sQSuHw6tWuAivTrM3dgb5WG9O81XtUxLhsW"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA111@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$f6F.SUO6Gv8UQ75wzvBOFOQUhYWDOUOl3GDqZLF61jdQM5WkqV7h6"
-    },
-    {
-        "name": "gabi",
-        "email": "gabiA111@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$JD7h5SmCX64tJBeTe4HSveMiMQ.FhMCfEu4yMMvGGr0gCNjeR1etO"
-    },
-    {
-        "name": "Nicolas",
-        "email": "   apa@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$yZEMJaCCcz\/f9SX27\/VrCef0gFBmTPzlIFmRBjMfJKBpi8m8VcPOC"
-    },
-    {
-        "name": "Nico",
-        "email": "   apLa@hotmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$ke6eDcQvWmmnErGbCUC2DOnXj28\/BqlqLnKbrVG5CB5s.0zzCNX.2"
-    },
-    {
-        "name": "maria",
-        "email": "ma@hotmail.com",
-        "nacionalidad": "br",
-        "password": "$2y$10$haddRMVbpqWPROKvq4ZnCOKcKLjCvb9reBTtWATWL2WC83Byqxi9u"
-    },
-    {
-        "name": "Nicolas",
-        "email": "perfu.s222ping@gmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$0zVIR01RuSkqw4\/3fDFeIuscClKc9KH15UUPQzBjWI\/11Iw4UKL8e",
-        "id": 1
-    },
-    {
-        "name": "Niolas",
-        "email": "perfu.2ping@gmail.com",
-        "nacionalidad": "ar",
-        "password": "$2y$10$lR0zp1.ZIcyLwtH8Em1pGu6IThh5mVclL.OW1g9NuEmHJ2Yvtr2W2",
-        "id": 2
+        "name": "marta",
+        "email": "marta@HOTMAIL.COM",
+        "id": 1,
+        "password": "$2y$10$YUcbi\/S0y2.oLzJehmsGJ.ihRtsm7ENmdACc2GEpDRm\/dS9XObK5S"
     }
 ]

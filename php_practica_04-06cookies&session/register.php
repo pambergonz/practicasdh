@@ -16,8 +16,8 @@ $countries = [
 ];
 
 if ($_POST) {
-  $fullNameInPost= $_POST['name'];
-  $emailInPost= $_POST['email'];
+  $fullNameInPost= trim($_POST['name']);
+  $emailInPost= trim($_POST['email']);
 
   $errorsInRegister = registerValidate();
   if (!$errorsInRegister){

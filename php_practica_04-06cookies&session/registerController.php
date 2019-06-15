@@ -70,11 +70,10 @@ function saveUsers() {
 
   $allusersInArray = allUsers();
 
-  $_POST["id"]= addUserId();
-  unset($_POST["repassword"]);
-  $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
-  //hay que trimmear cada campo antes de guardarlo en array. si no error ej caracteres en blanco no funcionaba emailexist()
-  $allusersInArray[] = $_POST;
+  //hay que armar usuario trimeando cada campo antes de guardarlo en array. si no posibildad erorr ej emailexist()
+
+  $userDetails = userDetails();
+  $allusersInArray[] = $userDetails;
 
   $jsonNewUser= json_encode($allusersInArray, JSON_PRETTY_PRINT);
 
@@ -94,6 +93,19 @@ function emailExist($email){
     }
   }
      return false;
+}
+
+function userDetails() {
+  //no incluir repassword
+  $usuario = [
+  "name" => trim($_POST['name']),
+  "email" => trim($_POST['email']),
+  "id"=> addUserId(),
+  "password" => password_hash($_POST["password"], PASSWORD_DEFAULT),
+  ];
+
+
+  return $usuario;
 }
 
 function addUserId(){
@@ -116,9 +128,6 @@ function getAUserByEmail($email){
   }
      return NULL;
 }
-
-
-
 
 
 function passwordMatch($password){
