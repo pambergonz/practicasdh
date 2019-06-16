@@ -16,21 +16,11 @@ echo "<pre>";
 
 
 
-if($_POST) {
-  if (isset($_POST["logout"])){
-    session_destroy();
-    header("location:home.php");
-  }
-}
-
-
 ?>
 
   <!-- si preguno si session tiene algo adentro-->
 <?php /*if (session_start()): */ ?>
 
 <?php if ($_SESSION == TRUE): ?>
-  <form method="post">
-    <input type="submit" name="logout" value="deslogueate">
-  </form>
+  <a href="logout.php">deslogueate</a>
 <?php endif; ?>

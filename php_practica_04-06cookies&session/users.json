@@ -40,5 +40,23 @@
         "email": "jhjhaaaaa@hotmail.com",
         "id": 6,
         "password": "$2y$10$p0Yi\/oEUYsRbXowBIe6HMOke92VKn8HeJxGglyMu1DkOYr0dTUwSu"
+    },
+    {
+        "id": 7,
+        "name": "Nicolas",
+        "email": "perfu.shoaaapping@gmail.com",
+        "password": "$2y$10$p.wWSKHslyzzvFlWIwLCEuQMti9p8YxkLEx11O6Z7mPEG8fQhIg4u"
+    },
+    {
+        "id": 8,
+        "name": "Nicolas",
+        "email": "perfu.sararqrhopping@gmail.com",
+        "password": "$2y$10$wDjPKWsegNfpZ5bCV2eYBOz6YKN0pND4.C0a3WSgZiPy7DfYJ.wDq"
+    },
+    {
+        "id": 9,
+        "name": "monga",
+        "email": "afaf@hotmail.com",
+        "password": "$2y$10$H2uuzQ0ke86kQudBdUWhnetu2x24TjDkv65T0BpG38IsB\/rrLYKBS"
     }
 ]

@@ -5,27 +5,28 @@ function loginValidate() {
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
 
-  if (empty($password)) {
-    $errores['inPassword']="Completá tu contraseña";
-  }
   if (empty($email)) {
     $errores['inEmail']="Completá tu email";
   }
-  elseif (!empty($email) && emailExist($email) == false || !empty($password) && passwordMatch($password) == true){
-    $errores['inEmail']="Credenciales incorrectas, registrate acá";
+  if (empty($password)) {
+    $errores['inPassword']="Completá tu contraseña";
   }
+  elseif(!passEmailMatch($password,$email)){
+  $errores['inEmail']="Credenciales incorrectas,<a href='register.php'>registrate  haciendo click acá</a>";
+  }
+
   return $errores;
 }
 
 function registerValidate() {
   $errors = [];
-  $fullName = trim($_POST['name']);
+  $name= trim($_POST['name']);
   $email = trim($_POST['email']);
   $password = trim($_POST['password']);
   $repassword = trim($_POST['repassword']);
   $country= $_POST['nacionalidad'];
 
-  if (empty($fullName)) {
+  if (empty($name)) {
     $errors['inFullName']="Completá tu nombre";
   }
   if (empty($email)) {
@@ -87,9 +88,9 @@ function emailExist($email){
 function userDetails() {
   //no incluir repassword
   $usuario = [
+  "id"=> addUserId(),
   "name" => trim($_POST['name']),
   "email" => trim($_POST['email']),
-  "id"=> addUserId(),
   "password" => password_hash($_POST["password"], PASSWORD_DEFAULT),
   ];
 
@@ -115,38 +116,18 @@ function getAUserByEmail($email){
       return $oneUser;
     }
   }
-     return NULL;
+  return NULL;
 }
 
-
-function passwordMatch($password){
-$allUsers = allUsers();
-foreach ($allUsers as $oneUser) {
-  if(password_verify($password,$oneUser["password"])){
-    return false;
-  }
- }
- if(password_verify($password,$oneUser["password"]) == false){
-   return true;
- }
-}
-
-//cambiar las variables por parametros
-function passEmailMatch($email,$password){
-  $email = trim($_POST['email']);
-  $password = trim($_POST['password']);
+function passEmailMatch($password,$email){
   $allUsers = allUsers();
   foreach ($allUsers as $oneUser) {
     if(password_verify($password,$oneUser["password"]) && $oneUser["email"] == $email){
-    return $oneUser;
+      return true;
     }
   }
-}
-
-
-
-
-
+  return false;
+  }
 
 
  ?>
