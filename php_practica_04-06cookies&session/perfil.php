@@ -1,7 +1,7 @@
 <?php
+//si el usuario no está logueado no deberia acceder a perfil.php
 require_once("registerController.php");
 require_once("partials/head.php");
-session_start();
 
 if (isset($_SESSION["email"])) {
 echo "hola " . $_SESSION['email'] . "!!!!!!Gracias por ser parte de Digicom!!";
@@ -23,5 +23,6 @@ echo "</pre>";
 <?php /*if (session_start()): */ ?>
 
 <?php if ($_SESSION == TRUE): ?>
-  <a href="logout.php">deslogueate</a>
+  <a href="logout.php">deslogueate</a><br>
+  <a href="modificarperfil.php">Modificá tu información personal haciendo clik acá</a>
 <?php endif; ?>

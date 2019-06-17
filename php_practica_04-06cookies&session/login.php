@@ -17,9 +17,7 @@ if ($_POST) {
      echo "<pre>";
      var_dump($_COOKIE);
      echo "</pre>";
-     exit;
-
-
+    
      header("location:perfil.php");
   }
 }

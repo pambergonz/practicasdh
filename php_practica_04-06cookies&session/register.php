@@ -1,5 +1,4 @@
 <?php
-session_start();
 $title = "Register";
 require_once("partials/head.php");
 require_once("registerController.php");

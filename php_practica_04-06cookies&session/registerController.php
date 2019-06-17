@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 function loginValidate() {
   $errores = [];
   $email = trim($_POST['email']);
@@ -14,7 +14,7 @@ function loginValidate() {
   elseif(!passEmailMatch($password,$email)){
   $errores['inEmail']="Credenciales incorrectas,<a href='register.php'>registrate  haciendo click acá</a>";
   }
-  
+
   return $errores;
 }
 
@@ -75,6 +75,7 @@ function allUsers(){
   return json_decode($users, true);
 }
 
+// primera vez q ejecuta no llega nada foreach error, if!...
 function emailExist($email){
   $allUsers = allUsers();
   foreach ($allUsers as $oneUser) {
@@ -99,12 +100,12 @@ function userDetails() {
 
 function addUserId(){
   $allUsers = allUsers();
-  $lastUser = array_pop($allUsers);
   if (!$allUsers) {
-  return $lastUser["id"] = 1;
+  return 1;
   }
   else {
-  return $lastUser["id"] + 1;
+    $lastUser = array_pop($allUsers);
+    return $lastUser["id"] + 1;
   }
 }
 
@@ -118,6 +119,15 @@ function getAUserByEmail($email){
   }
   return NULL;
 }
+
+function updateUserDetails($email){
+  $updateUser = getAUserByEmail($email);
+  $updateUser["email"]= $_POST["email"];
+  $jsonNewUser= json_encode($updateUser, JSON_PRETTY_PRINT);
+
+  FILE_PUT_CONTENTS("users.json", $jsonNewUser);
+}
+
 
 function passEmailMatch($password,$email){
   $allUsers = allUsers();
