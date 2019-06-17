@@ -58,5 +58,29 @@
         "name": "monga",
         "email": "afaf@hotmail.com",
         "password": "$2y$10$H2uuzQ0ke86kQudBdUWhnetu2x24TjDkv65T0BpG38IsB\/rrLYKBS"
+    },
+    {
+        "id": 10,
+        "name": "wrqr",
+        "email": "perqqqfu.shopping@gmail.com",
+        "password": "$2y$10$RsZ8ZUs3BZzYh4aUCBaWgegccr1lU4KmGerDWbh6lomD4ZrlVUcL."
+    },
+    {
+        "id": 11,
+        "name": "maria",
+        "email": "perfu.saahopping@gmail.com",
+        "password": "$2y$10$4EZUjviGngLAFF.vOtZNLudR2GVhOYJfM3Crglxjknq\/kBLDzSyPK"
+    },
+    {
+        "id": 12,
+        "name": "Nicolas",
+        "email": "perfu.shoaqerqtqtqtwaapping@gmail.com",
+        "password": "$2y$10$x7PFNOgZTlSmaaVO9G9O2.y4lLLwuBn4HYLfyYj4SGC.I5q34HX2."
+    },
+    {
+        "id": 13,
+        "name": "Nicolas",
+        "email": "qwqqtqtqqperfu.shopping@gmail.com",
+        "password": "$2y$10$jj8lafUp8zc2GMKg1yOl\/u3UAC0.HQwfKVdP7hXc5RXhadUiQh5Fq"
     }
 ]

@@ -14,7 +14,7 @@ function loginValidate() {
   elseif(!passEmailMatch($password,$email)){
   $errores['inEmail']="Credenciales incorrectas,<a href='register.php'>registrate  haciendo click acá</a>";
   }
-
+  
   return $errores;
 }
 
@@ -128,6 +128,18 @@ function passEmailMatch($password,$email){
   }
   return false;
   }
+
+function userLogin($email) {
+  if(isset($_COOKIE["email"])){
+    $_SESSION["email"] = $_COOKIE["email"];
+  } else {
+  $_SESSION["email"] = $email;
+  }  // guardar todos los datos de userDetails(), si esta setiada la cookie con el mail que matchea en json, traer todos los datos a $_session.
+  if (isset($_POST["recordarme"])) {
+    setcookie("email", $email, time() + 60 * 60);
+  }
+
+}
 
 
  ?>

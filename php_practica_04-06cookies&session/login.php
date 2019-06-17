@@ -5,26 +5,26 @@ require_once("partials/head.php");
 
 if ($_POST) {
 
+  $password = password_hash($_POST['password'],PASSWORD_DEFAULT);
+  $email = trim($_POST['email']);
   $errorsInLogin = loginValidate();
 
-  $password= password_hash($_POST['email'],PASSWORD_DEFAULT);
-  $email= trim($_POST['email']);
+  if (!$errorsInLogin) {
+     userLogin($email);
+     echo "<pre>";
+     var_dump($_SESSION);
+     echo "</pre>";
+     echo "<pre>";
+     var_dump($_COOKIE);
+     echo "</pre>";
+     exit;
 
 
-
-  if (!$errorsInLogin){
-
-   $userRegistered = passEmailMatch($email,$password);
-   var_dump($userRegistered);
-   $_SESSION = $userRegistered;
-
-    header("location:perfil.php");
+     header("location:perfil.php");
   }
 }
 
-
 ?>
-
 
   <form method="post" enctype="multipart/form-data">
     <label> Email:
@@ -40,6 +40,10 @@ if ($_POST) {
     <?php if (isset($errorsInLogin['inPassword'])) : ?>
       <?=$errorsInLogin['inPassword']?>
     <?php endif; ?>
+    <br>
+    <label>Recordarme
+      <input type="checkbox" name="recordarme" value="si">
+    </label>
     <br>
     <input type="submit" value="Submit">
   </form>

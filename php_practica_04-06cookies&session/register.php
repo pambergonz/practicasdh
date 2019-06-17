@@ -22,14 +22,14 @@ if ($_POST) {
   $errorsInRegister = registerValidate();
   if (!$errorsInRegister){
     saveUsers();
-    $_SESSION = userDetails();
+    userLogin($emailInPost);
 
-    //echo "<pre>";
-    //var_dump($_POST);
-    //echo "<pre>";
-    //echo "<pre>";
-    //var_dump($_SESSION);
-    //echo "<pre>";exit;
+    echo "<pre>";
+    var_dump($_COOKIE);
+    echo "</pre>";
+    echo "<pre>";
+    var_dump($_SESSION);
+    echo "</pre>";exit;
 
     header("location:perfil.php");
     exit;
@@ -84,6 +84,11 @@ if ($_POST) {
       <?php if (isset($errorsInRegister['inrePassword'])) : ?>
         <?=$errorsInRegister['inrePassword']?>
       <?php endif; ?>
+      <br>
+      <label>Recordarme
+        <input type="checkbox" name="recordarme" value="si">
+      </label>
+      <br>
       <input type="submit" value="enviar">
     </form>
   </body>
