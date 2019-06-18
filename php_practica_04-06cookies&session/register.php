@@ -28,7 +28,7 @@ if ($_POST) {
     echo "</pre>";
     echo "<pre>";
     var_dump($_SESSION);
-    echo "</pre>";exit;
+    echo "</pre>";
 
     header("location:perfil.php");
     exit;

@@ -122,8 +122,29 @@ function getAUserByEmail($email){
 
 function updateUserDetails($email){
   $updateUser = getAUserByEmail($email);
+  $allUsers = allUsers();
+  $idInUser = $updateUser['id'];
+
+  echo "<pre>";
+  var_dump($updateUser);
+  echo "</pre>";
+
   $updateUser["email"]= $_POST["email"];
-  $jsonNewUser= json_encode($updateUser, JSON_PRETTY_PRINT);
+
+  echo "<pre>";
+  var_dump($updateUser);
+  echo "</pre>";
+
+ // IF $allusers[0]
+  $allUsers[$idInUser]= $updateUser;
+
+  echo "<pre>";
+  var_dump($allUsers);
+  echo "</pre>";
+
+
+
+  $jsonNewUser= json_encode($allUsers, JSON_PRETTY_PRINT);
 
   FILE_PUT_CONTENTS("users.json", $jsonNewUser);
 }
@@ -140,11 +161,11 @@ function passEmailMatch($password,$email){
   }
 
 function userLogin($email) {
-  if(isset($_COOKIE["email"])){
-    $_SESSION["email"] = $_COOKIE["email"];
-  } else {
+  //if(isset($_COOKIE["email"])){
+    //$_SESSION["email"] = $_COOKIE["email"];
+  //} else {
   $_SESSION["email"] = $email;
-  }  // guardar todos los datos de userDetails(), si esta setiada la cookie con el mail que matchea en json, traer todos los datos a $_session.
+  //}  // guardar todos los datos de userDetails(), si esta setiada la cookie con el mail que matchea en json, traer todos los datos a $_session.
   if (isset($_POST["recordarme"])) {
     setcookie("email", $email, time() + 60 * 60);
   }

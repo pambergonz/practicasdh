@@ -1,14 +1,32 @@
 [
     {
         "id": 1,
-        "name": "ariel",
-        "email": "ariel@hotmail.com",
-        "password": "$2y$10$iT6Kr2byHgH5ZZEOF.abwO9rm6GcCYW7TbqIzlciYGEyxLsLZLutG"
+        "name": "pepa",
+        "email": "pepa@hotmail.com",
+        "password": "$2y$10$FmmLKzDwx794HD5b6wGFCueSbAyuVd3iJxIe\/fjdMAVOCL5p9m9Ye"
+    },
+    {
+        "id": 1,
+        "name": "pepa",
+        "email": "nuevopepa@hotmail.com",
+        "password": "$2y$10$FmmLKzDwx794HD5b6wGFCueSbAyuVd3iJxIe\/fjdMAVOCL5p9m9Ye"
     },
     {
         "id": 2,
-        "name": "pedro",
-        "email": "pedro.shopping@gmail.com",
-        "password": "$2y$10$BRjwXRcp7JDxMOc.7nAwMOy5KXlON7jgNy1IeU1ENw4LfhhEk7eda"
+        "name": "Nicolas",
+        "email": "niconuevo@hotmail.com",
+        "password": "$2y$10$F6hEN\/n8sr42H8Xu2bJdKO4fhMr8KktZz7lfX8r4eCTBvdUJ6miA."
+    },
+    {
+        "id": 3,
+        "name": "lara",
+        "email": "NUEVLARA@HOTMAIL.COM",
+        "password": "$2y$10$WZ\/v1qb\/TN5XerGuCEzoJeR.b2kUDHktQw3jUAY6SHwLxwushi.7a"
+    },
+    {
+        "id": 4,
+        "name": "GABI",
+        "email": "NUEOGABI@HOTMAIL.COM",
+        "password": "$2y$10$Z2Q4HxvfF9KmSUjqE2vBxuLJLOI7mhI\/kyj.qqH1MqrdC0HH7Vtq."
     }
 ]

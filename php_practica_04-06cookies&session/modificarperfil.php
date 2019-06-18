@@ -13,6 +13,13 @@ $countries = [
   've' => 'Venezuela',
 ];
 
+echo "<pre>";
+var_dump($_COOKIE);
+echo "</pre>";
+echo "<pre>";
+var_dump($_SESSION);
+echo "</pre>";
+
 if ($_POST) {
   $fullNameInPost= trim($_POST['name']);
   $emailInPost= trim($_POST['email']);
