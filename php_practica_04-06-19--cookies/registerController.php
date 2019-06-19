@@ -130,19 +130,18 @@ function updateUserDetails($email){
   echo "</pre>";
 
   $updateUser["email"]= $_POST["email"];
+  $updateUser["name"]= $_POST["name"];
+  $updateUser["password"]= password_hash($_POST["password"], PASSWORD_DEFAULT);
 
   echo "<pre>";
   var_dump($updateUser);
   echo "</pre>";
 
- // IF $allusers[0]
   $allUsers[$idInUser-1]= $updateUser;
 
   echo "<pre>";
   var_dump($allUsers);
   echo "</pre>";
-
-
 
   $jsonNewUser= json_encode($allUsers, JSON_PRETTY_PRINT);
 
@@ -169,7 +168,6 @@ function userLogin($email) {
   if (isset($_POST["recordarme"])) {
     setcookie("email", $email, time() + 60 * 60);
   }
-
 }
 
 

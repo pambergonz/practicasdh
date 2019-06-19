@@ -10,5 +10,11 @@
         "name": "luna",
         "email": "lunanuevo@hotmail.com",
         "password": "$2y$10$r.WwLRX70kF22NGAAz.lmePJes.uswOlSwFB0ew3liaS5.40uNCS6"
+    },
+    {
+        "id": 3,
+        "name": "mabel roberta",
+        "email": "nuevomabelroberta@hotmail.com",
+        "password": "$2y$10$hwZJjp2lRMrxJTP9DJgOcONou3yLxDv1oMMDo2Sas.5MUSg1iSdoO"
     }
 ]
