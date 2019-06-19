@@ -1,32 +1,14 @@
 [
     {
         "id": 1,
-        "name": "pepa",
-        "email": "pepa@hotmail.com",
-        "password": "$2y$10$FmmLKzDwx794HD5b6wGFCueSbAyuVd3iJxIe\/fjdMAVOCL5p9m9Ye"
-    },
-    {
-        "id": 1,
-        "name": "pepa",
-        "email": "nuevopepa@hotmail.com",
-        "password": "$2y$10$FmmLKzDwx794HD5b6wGFCueSbAyuVd3iJxIe\/fjdMAVOCL5p9m9Ye"
+        "name": "Nicolas",
+        "email": "nuevoperfu@gmail.com",
+        "password": "$2y$10$NmuQJAjX\/yWdRKtF7Xakl.jFa9KmERLqXP6dM8UaxFkGVaB146IJe"
     },
     {
         "id": 2,
-        "name": "Nicolas",
-        "email": "niconuevo@hotmail.com",
-        "password": "$2y$10$F6hEN\/n8sr42H8Xu2bJdKO4fhMr8KktZz7lfX8r4eCTBvdUJ6miA."
-    },
-    {
-        "id": 3,
-        "name": "lara",
-        "email": "NUEVLARA@HOTMAIL.COM",
-        "password": "$2y$10$WZ\/v1qb\/TN5XerGuCEzoJeR.b2kUDHktQw3jUAY6SHwLxwushi.7a"
-    },
-    {
-        "id": 4,
-        "name": "GABI",
-        "email": "NUEOGABI@HOTMAIL.COM",
-        "password": "$2y$10$Z2Q4HxvfF9KmSUjqE2vBxuLJLOI7mhI\/kyj.qqH1MqrdC0HH7Vtq."
+        "name": "luna",
+        "email": "lunanuevo@hotmail.com",
+        "password": "$2y$10$r.WwLRX70kF22NGAAz.lmePJes.uswOlSwFB0ew3liaS5.40uNCS6"
     }
 ]

@@ -23,12 +23,12 @@ if ($_POST) {
     saveUsers();
     userLogin($emailInPost);
 
-    echo "<pre>";
+    echo "cookie <pre>";
     var_dump($_COOKIE);
     echo "</pre>";
     echo "<pre>";
     var_dump($_SESSION);
-    echo "</pre>";
+    echo "session </pre>"; 
 
     header("location:perfil.php");
     exit;
