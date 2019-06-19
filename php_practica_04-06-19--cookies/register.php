@@ -1,5 +1,5 @@
 <?php
-$title = "Register";
+$title = "Registrate";
 require_once("partials/head.php");
 require_once("registerController.php");
 
@@ -28,7 +28,7 @@ if ($_POST) {
     echo "</pre>";
     echo "<pre>";
     var_dump($_SESSION);
-    echo "session </pre>"; 
+    echo "session </pre>";
 
     header("location:perfil.php");
     exit;
@@ -90,5 +90,4 @@ if ($_POST) {
       <br>
       <input type="submit" value="enviar">
     </form>
-  </body>
-</html>
+  <?php require_once 'partials/footer.php'; ?>

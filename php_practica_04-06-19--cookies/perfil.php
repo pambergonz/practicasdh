@@ -1,5 +1,6 @@
 <?php
 //si el usuario no está logueado no deberia acceder a perfil.php
+$title = "Perfil"; 
 require_once("registerController.php");
 require_once("partials/head.php");
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 function loginValidate() {
   $errores = [];
   $email = trim($_POST['email']);
@@ -75,9 +76,10 @@ function allUsers(){
   return json_decode($users, true);
 }
 
-// primera vez q ejecuta no llega nada foreach error, if!...
+
 function emailExist($email){
   $allUsers = allUsers();
+  // primera vez q ejecuta no llega nada foreach error, if ($allusers!=0){}
   foreach ($allUsers as $oneUser) {
     if ($oneUser["email"] == $email){
       return true;
@@ -169,6 +171,5 @@ function userLogin($email) {
     setcookie("email", $email, time() + 60 * 60);
   }
 }
-
 
  ?>

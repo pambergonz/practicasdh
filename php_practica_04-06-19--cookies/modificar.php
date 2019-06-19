@@ -1,11 +1,11 @@
 <?php
-session_start();
+require_once("registerController.php");
+
 
 if (isset($_SESSION["contador"])) {
   echo $_SESSION["contador"];
 }
 
-//$_SESSION["contador"] = 0; no
 
 if ($_POST){
 if (isset($_POST["incrementar"])){

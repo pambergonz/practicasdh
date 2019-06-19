@@ -1,5 +1,5 @@
 <?php
-session_start();
+$title = "home";
 require_once("registerController.php");
 require_once("partials/head.php");
  ?>
@@ -10,3 +10,5 @@ require_once("partials/head.php");
   <li><a href="register.php">Registrate</a></li>
 </ul>
 <?php endif; ?>
+
+<?php require_once 'partials/footer.php'; ?>
