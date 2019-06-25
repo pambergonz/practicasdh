@@ -69,6 +69,11 @@ if ($_POST) {
         </select>
         <?=isset($errorsInRegister['inCountry'])?$errorsInRegister['inCountry']: "" ?>
         <br>
+        <label> Cargá tu imagen de perfil
+          <input type="file" name="avatar">
+        </label>
+        <?=isset($errorsInRegister['inAvatar'])?$errorsInRegister['inAvatar']: "" ?>
+        <br>
         <label>Clave:
           <input type="password" name="password">
         </label>
@@ -85,7 +90,7 @@ if ($_POST) {
       <?php endif; ?>
       <br>
       <label>Recordarme
-        <input type="checkbox" name="recordarme" value="si">
+        <input type="checkbox" name="recordarme">
       </label>
       <br>
       <input type="submit" value="enviar">

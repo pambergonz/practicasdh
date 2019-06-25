@@ -71,16 +71,15 @@ function savePic($file) {
 
   $ext = pathinfo($name, PATHINFO_EXTENSION);
 
-  $finalPath = 'avatars/' . uniqid('img-') . "." . $ext;
-
+  $finalSavePath = 'avatars/' . uniqid('img-') . "." . $ext;
 
   var_dump($file);
 
   $tempFile = $file['tmp_name'];
 
-  move_uploaded_file($tempFile,  $finalPath);
+  move_uploaded_file($tempFile,  $finalSavePath);
 
-  return $finalPath;
+  return $finalSavePath;
 }
 
 
