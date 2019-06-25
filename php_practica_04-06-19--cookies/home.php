@@ -11,4 +11,12 @@ require_once("partials/head.php");
 </ul>
 <?php endif; ?>
 
+
+
+<?php if ($_SESSION == TRUE): ?>
+  <img src="<?=$_SESSION["avatarFinal"];?>" alt="avatar">
+<?php endif; ?>
+
+
+
 <?php require_once 'partials/footer.php'; ?>
