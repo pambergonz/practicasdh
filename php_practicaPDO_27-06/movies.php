@@ -8,12 +8,11 @@
     LEFT JOIN genres AS g ON m.genre_id= g.id
     ORDER BY title asc
     ");
-    debug($statement);
     //ejecuto la consulta que que preparé/
     $statement->execute();
-    debug($statement);
     $movies = $statement->fetchAll(PDO::FETCH_ASSOC);
-    debug($movies);
+
+    
     $title = "listado de pelis";
   require_once 'partials/head.php';
  ?>

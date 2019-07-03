@@ -4,6 +4,14 @@
 	$title = 'Crear una película';
 	require_once 'partials/head.php';
 	debug($_POST);
+
+	$statement = $moviesDbConnection->prepare("
+  SELECT distinct genres.name, genres.id FROM genres
+	ORDER BY name ASC
+  ");
+  $statement ->execute();
+  $genres = $statement ->fetchall(PDO::FETCH_ASSOC);
+	var_dump($genres);
 ?>
 
 <form action="guardarpelicula.php" method="post">
@@ -36,17 +44,19 @@
 		<input type="text" name="length">
 	</label>
 
-
-	<label>género:
-		<input type="text" name="genero">
-	</label>
-
-
 	<label> Nueva versión:
 		<input type="text" name="updated_at">
 	</label>
 
+	<select name="genre_id">
+		<?php foreach ($genres as $genre): ?>
+			<option value="<?=$genre["id"]?>"><?=$genre["name"]?></option>
+		<?php endforeach; ?>
+	</select>
+
 
 
 	<input type="submit" >
+	<?php debug($_POST);exit?>
+
 </form>

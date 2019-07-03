@@ -2,12 +2,8 @@
 
 require_once 'connection.php';
 require_once 'functions.php';
-  $statement = $moviesDbConnection->prepare("
-  SELECT m.title, m.length, m.rating, g.name as genero
-  FROM movies AS m
-  LEFT JOIN genres AS g ON g.id = m.genre_id
-  WHERE m.id = :id
-  ");
+
+
 
   $statement->bindValue(':id', $_GET['id'],PDO::PARAM_INT);
   $statement-> execute();
@@ -22,6 +18,6 @@ require_once 'functions.php';
    <li>Rating:<?=$movie['rating']?></li>
    <?php if(isset($movie['genero'])): ?>
      <li>Genero:<?=$movie['genero']?></li>
-   <?php endif; ?> 
+   <?php endif; ?>
    <li>Duración:<?=$movie['length']?>min</li>
  </ul>
