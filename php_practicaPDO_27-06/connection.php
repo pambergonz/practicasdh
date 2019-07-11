@@ -9,5 +9,6 @@ try {
  );
 }
 catch(PDOException $error) {
+  var_dump($error);
   echo "el error fue $error";
 }

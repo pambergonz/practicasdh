@@ -3,7 +3,6 @@
 	require_once 'functions.php';
 	$title = 'Crear una película';
 	require_once 'partials/head.php';
-	debug($_POST);
 
 	$statement = $moviesDbConnection->prepare("
   SELECT distinct genres.name, genres.id FROM genres
@@ -57,6 +56,5 @@
 
 
 	<input type="submit" >
-	<?php debug($_POST);exit?>
 
 </form>
