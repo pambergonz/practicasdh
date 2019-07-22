@@ -8,7 +8,7 @@ class Usuario{
   private $mail;
   private $contraseña;
   private $celular;
-  private $habilidades;//[hablidad]
+  private $habilidades = [];//[hablidad]
   private $id;
 
   function __construct(string $nombre, string $mail, int $contraseña) {
@@ -18,7 +18,7 @@ class Usuario{
     //24- Usuario::$id++;
   }
 
-}
+
   public function getId(){
     return $this->id;
   }
@@ -36,12 +36,11 @@ class Usuario{
     return $this->habilidades;
   }
 
+
   //22-array habilidades,adentro array asociativo habilidad con valores en posicion $nombre, $expertise
 
-  public function addHabilidad($nombre,$expertise){
-   $habilidad["nombre"]=$nombre;
-   $habilidad["expertise"]=$expertise;
-   $habilidades[]=$habilidad;
+  public function addHabilidad($habilidad){
+   $this->habilidades[] = $habilidad;
   }
 
   /*23

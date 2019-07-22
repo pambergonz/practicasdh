@@ -12,6 +12,12 @@ $celular1->setMarca("iphone");
 $celular2 = new Celular("gigante","personal");
 $celular2->setMarca("huwai");
 
+$habilidad1 = new Habilidad("correr",5);
+$habilidad2 = new Habilidad("nadar",4);
+$habilidad3 = new Habilidad("volar",4);
+
+
+
 $usuario1= new Usuario("Pablo","a@hotmail.com", 123456);
 $usuario1->setNombre("Pablo");
 $usuario1->setMail("pablito@hotmail.com");
@@ -20,9 +26,9 @@ $usuario1->saludar();
 $usuario1->setCelular($celular1);
 $usuario1->getCelular()->getMarca();
 $usuario1->encriptarPass(11424255);
-$usuario1->addHabilidad("nadar",1);
-$usuario1->addHabilidad("bucear",2);
-$usuario1->addHabilidad("correr",4);
+$usuario1->addHabilidad($habilidad1);
+$usuario1->addHabilidad($habilidad2);
+$usuario1->addHabilidad($habilidad3);
 $usuario1->setId(1);
 $usuario1->guardar($usuario1);
 echo $usuario1->getMarcaCelular();
