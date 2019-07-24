@@ -8,14 +8,15 @@ class Usuario{
   private $mail;
   private $contraseña;
   private $celular;
-  private $habilidades = [];//[hablidad]
-  private $id;
+  private $habilidades = [];
+  private $idUsuario;
+  static $id = 0;
 
   function __construct(string $nombre, string $mail, int $contraseña) {
     $this->nombre = $nombre;
     $this->mail = $mail;
     $this->contraseña = $contraseña;
-    //24- Usuario::$id++;
+    $this->idUsuario = self::$id++; //24 ver, en práctica siguiente
   }
 
 
@@ -23,9 +24,9 @@ class Usuario{
     return $this->id;
   }
 
-  public function setId($id){
+  /*public function setId($id){
     return $this->id= $id;
-  }
+  }24 ver */
 
   public function getNombre(){
      $this->nombre;
@@ -40,7 +41,7 @@ class Usuario{
   //22-array habilidades,adentro array asociativo habilidad con valores en posicion $nombre, $expertise
 
   public function addHabilidad($habilidad){
-   $this->habilidades[] = $habilidad;
+  $this->habilidades[] = $this->$habilidad;
   }
 
   /*23

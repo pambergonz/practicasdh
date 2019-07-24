@@ -29,7 +29,7 @@ $usuario1->encriptarPass(11424255);
 $usuario1->addHabilidad($habilidad1);
 $usuario1->addHabilidad($habilidad2);
 $usuario1->addHabilidad($habilidad3);
-$usuario1->setId(1);
+//$usuario1->setId(1);
 $usuario1->guardar($usuario1);
 echo $usuario1->getMarcaCelular();
 debug($usuario1);
