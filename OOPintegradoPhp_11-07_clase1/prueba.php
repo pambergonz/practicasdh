@@ -29,8 +29,6 @@ $usuario1->encriptarPass(11424255);
 $usuario1->addHabilidad($habilidad1);
 $usuario1->addHabilidad($habilidad2);
 $usuario1->addHabilidad($habilidad3);
-//$usuario1->setId(1);
-$usuario1->guardar($usuario1);
 echo $usuario1->getMarcaCelular();
 debug($usuario1);
 
@@ -43,7 +41,5 @@ echo $usuario2->llamar($usuario1, 20);
 $usuario2->addHabilidad("nadar",1);
 $usuario2->addHabilidad("bucear",2);
 $usuario2->addHabilidad("correr",4);
-debug($usuario2);
 
 $usuario3 = new Usuario("Pedro","pedro@hotmail.com",123456);
-debug($usuario3);
