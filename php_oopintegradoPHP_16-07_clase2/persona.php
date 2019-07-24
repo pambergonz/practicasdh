@@ -1,12 +1,26 @@
 <?php
 
 require_once("cliente.php");
+require_once("cuenta.php");
 
 class Persona extends Cliente {
   Private $nombre;
   Private $apellido;
   Private $documento;
   Private $nacimiento;
+  Private $cuenta;
+
+  public function acreditar($monto, $ultimoMovimiento) {
+    $this->balance = $this->balance + $monto;
+    $this->setUltimoMovimiento($ultimoMovimiento);
+  }
+
+  public function getUltimoMovimiento(){
+    return $this->ultimoMovimiento;
+  }
+  public function setUltimoMovimiento($ultimoMovimiento){
+    return $this->ultimoMovimiento = $ultimoMovimiento;
+  }
 
   public function setNombre($nombre){
     $this->nombre = $nombre;

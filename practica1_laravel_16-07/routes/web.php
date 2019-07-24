@@ -25,51 +25,6 @@ Route::get('/sumar/{numero1}/{numero2}/{numero3?}', function($numero1,$numero2,$
       return $numero1 + $numero2 + $numero3;
 });
 
-Route::get('/peliculas', function() {
-      $peliculas = [
-          0 =>[
-          "titulo"=>"Rey León",
-          "rating"=> "5"
-      ],
+Route::get('/peliculas', 'peliculasController@listado');
 
-          1 => [
-          "titulo"=>"Alicia",
-          "rating"=> "5"
-      ],
-          2 =>[
-              "titulo"=>"Sirenita",
-          "rating"=> "5"
-      ],
-
-          3 => [
-          "titulo"=>"Harry Potter",
-          "rating"=> "5"
-      ],
-];
-      return view('peliculas',compact('peliculas'));
-});
-
-Route::get('/peliculas/{id}', function($id){
-    $peliculas = [
-        0 =>[
-        "titulo"=>"Rey León",
-        "rating"=> "5"
-    ],
-
-        1 => [
-        "titulo"=>"Alicia",
-        "rating"=> "5"
-    ],
-        2 =>[
-        "titulo"=>"Sirenita",
-        "rating"=> "5"
-    ],
-
-        3 => [
-        "titulo"=>"Harry Potter",
-        "rating"=> "5"
-    ],
-];
-
-    return view('detallePelicula', compact('id','peliculas'));
-});
+Route::get('/peliculas/{id}', 'peliculasController@detalle');

@@ -11,8 +11,9 @@ public function construct__($cbu){
 
 abstract public function debitar($monto, $cajero);
 
-public function acreditar($monto) {
+public function acreditar($monto,$ultimoMovimiento) {
   $this->balance = $this->balance + $monto;
+  $this->setUltimoMovimiento($ultimoMovimiento);
 }
 
 public function modificarFechaMovimiento($ultimoMovimiento){

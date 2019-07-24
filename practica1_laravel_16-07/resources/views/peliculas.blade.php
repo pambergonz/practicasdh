@@ -1,9 +1,9 @@
-@extends("plantilla")
+@extends('plantilla')
 
-@section("titulo")
+@section('titulo')
 Todas las películas
 @endsection
-@section("principal")
+@section('principal')
 @forelse ($peliculas as $pelicula)
   <p>{{$pelicula['titulo']}}</p>
   <p>{{$pelicula['rating']}}</p>

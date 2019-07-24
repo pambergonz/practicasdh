@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    @yield("estilo")
-    <link rel="stylesheet" href="/css/apps.css">
+    <link rel="stylesheet" href="/css/detalle.css">
     <title>
-      @yield("titulo")
+      @yield('titulo')
     </title>
   </head>
   <body>
@@ -16,7 +15,7 @@
       </ul>
     </header>
     <section>
-      @yield("principal")
+      @yield('principal')
     </section>
     <footer> Copyright</footer>
   </body>

@@ -1,7 +1,7 @@
 <?php
+
 require_once("cliente.php");
-class Pyme extends Cliente {
-  Private $nombre;
+class Multinacional extends Cliente {
   Private $cuit;
   Private $razonSocial;
 
@@ -9,11 +9,11 @@ class Pyme extends Cliente {
     $this->cuit = $cuit;
   }
 
-  public function getNombre() {
-    return $this->nombre;
+  public function getRazonSocial() {
+    return $this->razonSocial;
   }
-  public function setNombre() {
-    $this->nombre = $nombre;
+  public function setRazonSocial($razonSocial) {
+    $this->razonSocial = $razonSocial;
   }
 
   public function getCuit() {
