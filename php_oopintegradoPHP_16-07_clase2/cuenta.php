@@ -1,8 +1,8 @@
 <?php
 abstract class Cuenta{
-  Private $cbu;
-  Private $balance;
-  Private $ultimoMovimiento;
+  Protected $cbu;
+  Protected $balance;
+  Protected $ultimoMovimiento;
 
 
 public function construct__($cbu){

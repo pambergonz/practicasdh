@@ -59,6 +59,3 @@ class Persona extends Cliente {
     return $this->pass;
   }
 }
-
-$persona= new Persona();
-var_dump($persona);
