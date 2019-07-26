@@ -6,7 +6,7 @@ class Habilidad{
 
   //ˆ[0-9]$
 
-  public function construct__(string $nombre, int $expertise){
+  public function __construct(string $nombre, int $expertise){
   $this->nombre = $nombre;
   $this->expertise = $expertise;
   }

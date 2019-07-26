@@ -8,7 +8,7 @@ class Usuario{
   private $mail;
   private $contraseña;
   private $celular;
-  private $habilidades = [];
+  //private $habilidades = [];
   private $idUsuario;
   static $id = 0;
 
@@ -38,13 +38,12 @@ class Usuario{
 
     //22-ver pincha
     public function addHabilidad($habilidad){
-      $this->habilidades[]=$this->habilidad=$habilidad;
-     }
-
-    /*23.array habilidades,adentro array asociativo habilidad con valores en posicion $nombre, $expertise?
+      $this->habilidades[]= $habilidad;
+         }
+/*
     public function saberHacer($nombreHabilidad, $puntaje){
-      foreach($habilidades as $habilidad){
-        if($this->habilidad[0]==$nombreHabilidad && $this->habilidad[1]==$puntaje){
+      foreach($this->$habilidades as $habilidad){
+        if($habilidad->getNombre() == $nombreHabilidad && $this->habilidad[1]==$puntaje){
           return
         }
       }
@@ -116,5 +115,14 @@ class Usuario{
      foreach ($usuarios as $usuario) {
        $this->usuarios[] = $usuario;
      }
+   }
+
+   public function guardar($db) {
+
+     $usuario = [
+       'nombre' => $this->nombre,
+     ]
+
+     $db[] = $usuario;
    }
 }
