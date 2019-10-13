@@ -13,3 +13,6 @@
 
 
 Route::get('/actors','actorsController@directory');
+Route::get('/actor/{id}','actorsController@show');
+Route::get('/actors/buscar','actorsController@search');
+Route::post('/actors/buscar','actorsController@search');

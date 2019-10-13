@@ -11,4 +11,13 @@ class actorsController extends Controller
       $actors = actor::all();
       return view('/actors',compact('actors'));
     }
+
+    public function show($id){
+      $actor= actor::find($id);
+      return view('/actor',compact('actor'));
+    }
+    public function search($name){
+      $actor= actor::where('first_name' == $name );
+      return view('/actores/buscar',compact('actor'));
+    }
 }

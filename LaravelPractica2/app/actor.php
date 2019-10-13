@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class actor extends Model
+class Actor extends Model
 {
-  $guarded = [];
+  public $guarded = [];
 
 }
